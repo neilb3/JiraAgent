@@ -98,7 +98,7 @@ or `jira_agent.py`) calls them in sequence, passing typed Pydantic objects
   to MEDIUM based on keyword matching in the model's free-text explanation. That was
   removed — it's fragile and looks like the system is gaming its own results. The
   current version trusts the `verdict` field the security reviewer returns directly.
-- **A FAIL verdict doesn't block the PR — it flags it.** A fully automated system that
+- **A FAIL verdict doesn't block the PR - it flags it.** A fully automated system that
   silently refuses to produce output when its own internal judgment is uncertain isn't
   useful to a human reviewer. The PR is always created; on FAIL it's clearly marked
   `[NEEDS REVIEW - SECURITY FAIL]` with a warning banner, and on the Jira side the
@@ -156,7 +156,7 @@ python jira_agent.py SCRUM-6 --repo owner/reponame
 - Code retrieval sends the full file tree to Claude for planning. Works well for small
   to medium repos; a large-scale repo would need embedding-based retrieval to stay
   within context limits.
-- Security review breadth is LLM-based and not fully deterministic — re-running the
+- Security review breadth is LLM-based and not fully deterministic - re-running the
   same ticket can surface a slightly different set of findings. The verdict logic and
   severity rules are designed to keep the important ones (HIGH in production code)
   consistent, but exhaustiveness on lower-severity findings will vary run to run.
