@@ -1,0 +1,4 @@
+anthropic==0.40.0
+PyGithub==2.5.0
+pydantic==2.9.2
+python-dotenv==1.0.1
