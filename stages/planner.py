@@ -2,6 +2,7 @@ import anthropic
 import json
 from models import PlanOutput
 
+
 SYSTEM_PROMPT = """You are a senior software engineer planning code changes for a Jira ticket.
 You will receive a Jira ticket, a repository file tree, and optionally the repo's AGENTS.md
 file describing its conventions. Follow AGENTS.md instructions strictly if provided, including
