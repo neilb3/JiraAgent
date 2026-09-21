@@ -16,7 +16,6 @@ from stages.verifier import run_verifier
 from stages.security import run_security_review
 from stages.pr_creator import run_pr_creator
 
-
 # ── Config ────────────────────────────────────────────────────────────────────
 load_dotenv()
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
@@ -76,6 +75,7 @@ def main():
     else:
         info("No AGENTS.md found in this repo - proceeding without repo-specific conventions")
 
+    
     # ── Stage 1: Planning ─────────────────────────────────────────────────────
     stage(1, "Planning")
     info("Fetching repo file tree...")
