@@ -1,12 +1,14 @@
 from pydantic import BaseModel
 from typing import Optional
 
+
 class PlanOutput(BaseModel):
     branch_name: str
     files_to_modify: list[str]
     plan_summary: str
     commit_message: str
     reasoning: str
+
 
 class CodeChanges(BaseModel):
     files: dict[str, str]  # filename -> new full content
