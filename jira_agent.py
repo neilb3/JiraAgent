@@ -181,6 +181,7 @@ def main():
     info(f"Files:   {', '.join(plan.files_to_modify)}")
     info(f"Summary: {plan.plan_summary[:120]}...")
 
+    
     # Stage 2: Code Retrieval
     stage(2, "Code Retrieval")
     info("Fetching current file contents from GitHub...")
