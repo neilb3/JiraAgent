@@ -2,6 +2,7 @@ import anthropic
 import json
 from models import CodeChanges, SecurityReport, SecurityFinding
 
+
 SYSTEM_PROMPT = """You are a security engineer reviewing code changes before they are merged.
 
 Analyze the code using the OWASP API Security Top 10 (2023) and OWASP Top 10 (2021) -
