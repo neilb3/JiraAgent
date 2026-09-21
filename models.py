@@ -17,6 +17,7 @@ class SecurityFinding(BaseModel):
     issue: str
     recommendation: str
 
+
 class SecurityReport(BaseModel):
     findings: list[SecurityFinding]
     verdict: str  # PASS, PASS with warnings, FAIL
