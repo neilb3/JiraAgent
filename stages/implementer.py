@@ -2,6 +2,7 @@ import anthropic
 import re
 from models import PlanOutput, CodeChanges
 
+
 BASE_SYSTEM_PROMPT = """You are a senior software engineer implementing code changes.
 You will receive a Jira ticket, an implementation plan, and the current content of files to modify.
 Optionally you will also receive the repo's AGENTS.md conventions - follow them strictly.
