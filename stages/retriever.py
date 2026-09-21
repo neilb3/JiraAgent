@@ -1,6 +1,7 @@
 from github import Repository
 from models import PlanOutput
 
+
 def run_retriever(repo: Repository, plan: PlanOutput) -> dict[str, str]:
     """
     Fetch actual file contents from GitHub for every file in the plan.
