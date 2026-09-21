@@ -5,6 +5,7 @@ code retrieval, test execution, verification loops, and security review.
 
 ## What It Does
 
+
 Given a Jira ticket ID and a target GitHub repo, the agent:
 
 1. **Plans** — Claude reads the ticket and the target repo's file tree (plus its
